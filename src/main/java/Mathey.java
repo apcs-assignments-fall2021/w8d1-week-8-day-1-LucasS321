@@ -8,7 +8,13 @@ public class Mathey {
      * public static ...
      */
     // YOUR CODE HERE, METHOD HEADER ALSO REQUIRED
-
+public static int max(int in1, int in2) {
+    if (in1 > in2) {
+        return in1;
+    } else {
+        return in2;
+    }
+}
 
 
 
@@ -17,7 +23,13 @@ public class Mathey {
      */
     // YOUR CODE HERE, METHOD HEADER ALSO REQUIRED
 
-
+public static double max(double in1, double in2) {
+    if (in1 > in2) {
+        return in1;
+    } else {
+        return in2;
+    }
+}
 
 
     /* Write another method called max that takes **three integers**
@@ -25,7 +37,15 @@ public class Mathey {
      */
     // YOUR CODE HERE, METHOD HEADER ALSO REQUIRED
 
-
+    public static int max(int in1, int in2,int in3) {
+        if (in1 > in2 && in1 > in3) {
+            return in1;
+        } else if (in2 > in1 && in2 > in3) {
+            return in2;
+        } else {
+            return in3;
+        }
+    }
 
 
     /* Write another method called max that takes **four doubles**
@@ -33,7 +53,17 @@ public class Mathey {
      */
     // YOUR CODE HERE, METHOD HEADER ALSO REQUIRED
 
-
+    public static double max(double in1, double in2,double in3,double in4) {
+        if (in1 > in2 && in1 > in3 && in1 > in4) {
+            return in1;
+        } else if (in2 > in1 && in2 > in3 && in2 > in4) {
+            return in2;
+        } else if (in3 > in1 && in3 > in2 && in3 > in4) {
+            return in3;
+        } else {
+            return in4;
+        }
+    }
 
 
     /* Write a method that takes **two integers** and generates a random
@@ -45,7 +75,9 @@ public class Mathey {
      *     randomInteger(1, 4) => 4
      */
     // YOUR CODE HERE, METHOD HEADER ALSO REQUIRED
-
+public static int randomIntager(int in1, int in2) {
+    return (int) (Math.random() * (in2-in1+1) + in1);
+}
 
 
 
@@ -58,7 +90,9 @@ public class Mathey {
      */
     // YOUR CODE HERE, METHOD HEADER ALSO REQUIRED
 
-
+    public static int randomIntager(int in1) {
+        return (int) (Math.random() * (in1+1));
+    }
 
 
 
@@ -73,7 +107,15 @@ public class Mathey {
      *     pow(3, 4) => 81
      */
     // YOUR CODE HERE, METHOD HEADER ALSO REQUIRED
-
+public static int pow (int in1, int in2){
+    int ans = in1;
+    if (in1 >= 2) {
+        for (int i = 2; i <= in2; i++) {
+            ans = ans * in1;
+        }
+    }
+    return ans;
+}
 
 
 
@@ -84,7 +126,13 @@ public class Mathey {
      */
     // YOUR CODE HERE, METHOD HEADER ALSO REQUIRED
 
-
+    public static int abs (int in1){
+        if (in1 < 0) {
+            return 0-in1;
+        } else {
+            return in1;
+        }
+    }
 
 
     /* Write a method that takes **one double** and returns the
@@ -94,7 +142,9 @@ public class Mathey {
      *     round(2.5) => 2
      */
     // YOUR CODE HERE, METHOD HEADER ALSO REQUIRED
-
+public static int round(double in1) {
+    return (int) (in1+0.5);
+}
 
 
 
@@ -109,7 +159,9 @@ public class Mathey {
      */
     // YOUR CODE HERE, METHOD HEADER ALSO REQUIRED
 
-
+public static int floor(double x) {
+    return (int) x;
+}
 
 
 
@@ -123,7 +175,9 @@ public class Mathey {
      */
     // YOUR CODE HERE, METHOD HEADER ALSO REQUIRED
 
-
+public static int ceil(double in1) {
+    return ((int) in1) +1;
+}
 
 
 
