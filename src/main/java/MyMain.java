@@ -23,10 +23,6 @@ public class MyMain {
         System.out.println("The three random numbers are "+num1+", "+num2+", and "+num3);
         System.out.println("The largest number is "+Math.max(Math.max(num1,num2),num3));
         System.out.println("The smallest number is "+Math.min(Math.min(num1,num2),num3));
-
-
-
-
          // Uncomment this code later!
          System.out.println("Mathey max tests");
          System.out.println(Mathey.max(1, 2)); // 2
@@ -42,6 +38,7 @@ public class MyMain {
         System.out.println(Mathey.randomIntager(16)); // 0-16
         System.out.println("Mathey pow tests");
         System.out.println(Mathey.pow(2, 4)); // 16
+        System.out.println(Mathey.pow(3, 3)); // 27
         System.out.println("Mathey.abs tests");
         System.out.println(Mathey.abs(6)); // 6
         System.out.println(Mathey.abs(-6)); // 6
@@ -56,9 +53,9 @@ public class MyMain {
         System.out.println(Mathey.ceil(3.5)); // 4
         System.out.println("Mathey sqrt tests");
         System.out.println(Mathey.sqrt(50)); // 7.07...
-
-
-
+        System.out.println(Mathey.sqrt(35)); // 5.91...
+        System.out.println("Pythag Test");
+        System.out.println(Mathey.sqrt(Mathey.pow(5,2)+Mathey.pow(12,2)));
     }
 
 }
